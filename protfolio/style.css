@@ -64,6 +64,14 @@ body{
     border: 1px solid black;
     border-radius: 20px;
 }
+#overview{
+    position: relative;
+}
+.social-icons{
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+}
 @media (min-width:932px) and (max-width:1199px){
     .profile-log{
         width: 450px;
@@ -74,6 +82,12 @@ body{
         width: 100%;
     }
 } 
+@media(max-width:767px){
+    .social-icons{
+        position: static;
+        margin-left: -30px;
+    }
+}
 .nav-bar{
     top:0;
     position: sticky;
@@ -227,7 +241,7 @@ body{
     background: transparent;
 }
 .contact .btn:focus{
-    box-shadow: none;!important;
+    box-shadow: none!important;
 }
 .contact .btn:hover{
     border:2px solid #000!important;
